@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { useForm } from "react-hook-form";
 
 const OrderForm = (props) => {
-  const [orderSubmitted, setOrderSubmitted] = useState(false);
   const {
     register,
     handleSubmit,
@@ -12,7 +11,6 @@ const OrderForm = (props) => {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    setOrderSubmitted(true);
     props.getOrderState(true)
     resetField('userName')
     resetField('userPhoneNum')
