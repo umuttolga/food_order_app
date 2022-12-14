@@ -1,6 +1,5 @@
 import React from "react";
 import Modal from "../UI/Modal";
-
 const OrderCompleted = (props) => {
   return (
     <Modal close={props.close}>
