@@ -1,13 +1,13 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import MealsSum from './MealsSum'
 import AvailableMeals from './AvailableMeals'
 
-const Meals = () => {
+const Meals = (props) => {
   return (
-    <Fragment>
+    <div onClick={props.closeOrderPage}>
       <MealsSum/>
       <AvailableMeals/>
-    </Fragment>
+    </div>
   )
 }
 

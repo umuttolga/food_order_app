@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import Context from "../../store/Context";
 const HeaderCartButton = (props) => {
+
   const [isBumped, setisBumped] = useState(false);
   const cartCtx = useContext(Context);
   const {items} = cartCtx
@@ -30,7 +31,7 @@ const HeaderCartButton = (props) => {
         <ShoppingBasketIcon sx={{ height: "1.5rem", mb: "3px" }} />
       </span>
       <span className="ml-2">Your Cart</span>
-      <span className="ml-4 group-hover:bg-[#92320c] bg-[#b94517]  rounded-full ml-1 w-8">
+      <span className="ml-4 group-hover:bg-[#92320c] bg-[#b94517]  rounded-full w-8">
         {numberOfCartItems}
       </span>
     </button>

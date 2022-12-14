@@ -4,12 +4,13 @@ import ReactDOM from 'react-dom'
 
 
 const Overlay = (props) => {
-    return <div className='p-4 rounded-xl shadow-2xl z-30 fixed top-[20rem] left-[30%] w-[45%] m-auto bg-white'>
+    return <div className='md:p-4 rounded-xl shadow-2xl p-4 w-[60%]-auto h-[30%]-auto z-30 fixed left-[25%] top-[30%] md:top-[30%] md:left-[30%] md:w-[35%] m-auto bg-white'>
         <div className='content'>{props.children}</div>
     </div>
 }
 const BackDrop = (props) => {
-    return <div onClick={props.close} className='bg-black opacity-75 top-0 left-0 z-20  fixed w-[100%] h-[100vh] bg-[ rgba(0, 0, 0, 0.75)]'>
+    return <div onClick={props.close} className='bg-black opacity-75 top-0 left-0 z-20  fixed w-[100%] h-[100%] bg-[ rgba(0, 0, 0, 0.75)]'>
+      {props.children}
     </div>
 }
 

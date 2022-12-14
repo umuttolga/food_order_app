@@ -45,7 +45,7 @@ const Cart = (props) => {
             Close
           </button>
           {!hasItems && (
-            <button className="hover:bg-[#5a1a01] hover:border-[#5a1a01] hover:text-white ml-4 border-[#8a2b06] py-1 px-8 rounded-xl bg-[#8a2b06] text-white">
+            <button onClick={props.openOrderPage} className="hover:bg-[#5a1a01] hover:border-[#5a1a01] hover:text-white ml-4 border-[#8a2b06] py-1 px-8 rounded-xl bg-[#8a2b06] text-white">
               Order
             </button>
           )}
