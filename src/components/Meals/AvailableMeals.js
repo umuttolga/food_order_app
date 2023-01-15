@@ -1,32 +1,31 @@
 import React from "react";
-import { useEffect, useState } from "react";
 import "../../index.css";
 import Card from "../UI/Card";
 import MealsListItems from "./MealsListItems";
 
 const DUMMY_MEALS = [
   {
-    id: 'm1',
-    name: 'Sushi',
-    description: 'Finest fish and veggies',
+    id: "m1",
+    name: "Sushi",
+    description: "Finest fish and veggies",
     price: 22.99,
   },
   {
-    id: 'm2',
-    name: 'Schnitzel',
-    description: 'A german specialty!',
+    id: "m2",
+    name: "Schnitzel",
+    description: "A german specialty!",
     price: 16.5,
   },
   {
-    id: 'm3',
-    name: 'Barbecue Burger',
-    description: 'American, raw, meaty',
+    id: "m3",
+    name: "Barbecue Burger",
+    description: "American, raw, meaty",
     price: 12.99,
   },
   {
-    id: 'm4',
-    name: 'Green Bowl',
-    description: 'Healthy...and green...',
+    id: "m4",
+    name: "Green Bowl",
+    description: "Healthy...and green...",
     price: 18.99,
   },
 ];
@@ -38,7 +37,7 @@ const AvailableMeals = () => {
   // useEffect(() => {
   //   let loadedMeals = [];
   //   async function getMeals() {
-      
+
   //     const response = await fetch(
   //       "https://fir-test-a84fb-default-rtdb.firebaseio.com/meals.json"
   //     );
@@ -71,8 +70,7 @@ const AvailableMeals = () => {
   return (
     <section className=" m-auto max-w-[60rem] w-[90%]">
       <Card>
-        {!isLoading && <ul className="divide-y-4 list-none">{mealList}</ul>}
-        {isLoading && <h3>Loading...</h3>}
+        <ul className="divide-y-4 list-none">{mealList}</ul>
       </Card>
     </section>
   );
